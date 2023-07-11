@@ -47,5 +47,4 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ❓", url=config.SUPPORT_CHANNEL
             )
             ].
-     ]
     return buttons
