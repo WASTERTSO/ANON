@@ -9,7 +9,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𝑨𝒅𝒅 𝑴𝒆 𝑩𝒂𝒃𝒚 ➕",
+                text="𝑨𝒅𝒅 𝑴𝒆 𝑩𝒂𝒃𝒚  ➕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
