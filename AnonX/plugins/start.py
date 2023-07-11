@@ -43,7 +43,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgUAAxkBAAJE8GK4EsoLVZC2SW5W5Q-QAkaoN8f_AAL9BQACiy14VGoQxOCDfE1KKQQ")
+            await message.reply_sticker("CAACAgIAAxkDAAIB_GSte9ArHQS7e8oOZ-KO96mtImkvAAIoIAACJaYJS-FqCk576-FVLwQ")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"].format(config.SUPPORT_HEHE), reply_markup=keyboard
@@ -52,7 +52,7 @@ async def start_comm(client, message: Message, _):
             return await message.reply_text(_["song_2"])
         if name[0:3] == "sta":
             m = await message.reply_text(
-                f"🥱 ɢᴇᴛᴛɪɴɢ ʏᴏᴜʀ ᴩᴇʀsᴏɴᴀʟ sᴛᴀᴛs ғʀᴏᴍ {config.MUSIC_BOT_NAME} sᴇʀᴠᴇʀ."
+                f"🥱 𝐺𝑒𝑡𝑡𝑖𝑛𝑔 𝑌𝑜𝑢𝑟 𝑃𝑒𝑟𝑠𝑜𝑛𝑎𝑙 𝑆𝑡𝑎𝑡𝑠 𝐹𝑟𝑜𝑚 {config.MUSIC_BOT_NAME} 𝑆𝑒𝑟𝑣𝑒𝑟."
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
@@ -88,9 +88,9 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHeavenMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚](https://t.me/full_on_bakchodii) ** 𝑃𝑙𝑎𝑦𝑒𝑑 {count} 𝑇𝑖𝑚𝑒𝑠**\n\n"
                     else:
-                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
+                        msg += f"🔗 [{𝑇𝑖𝑡𝑙𝑒}](https://www.youtube.com/watch?v={vidid}) ** 𝑃𝑙𝑎𝑦𝑒𝑑 {count} 𝑇𝑖𝑚𝑒𝑠**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
                 return videoid, msg
 
@@ -112,7 +112,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <code>sᴜᴅᴏʟɪsᴛ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
+                    f"{message.from_user.mention} 𝐽𝑢𝑠𝑡 𝑆𝑡𝑎𝑟𝑡𝑒𝑑 𝑇𝒉𝑒 𝐵𝑜𝑡 𝑡𝑜 𝐶𝒉𝑒𝑐𝑘 <code>𝑆𝑢𝑑𝑜𝑙𝑖𝑠𝑡</code>\n\n**𝑈𝑠𝑒𝑟 𝑖𝑑:** {sender_id}\n**𝑈𝑠𝑒𝑟𝑛𝑎𝑚𝑒:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -123,18 +123,18 @@ async def start_comm(client, message: Message, _):
                 return await Telegram.send_split_text(message, lyrics)
             else:
                 return await message.reply_text(
-                    "ғᴀɪʟᴇᴅ ᴛᴏ ɢᴇᴛ ʟʏʀɪᴄs."
+                    "𝐹𝑎𝑖𝑙𝑒𝑑 𝑇𝑜 𝐺𝑒𝑡 𝐿𝑦𝑟𝑖𝑐𝑠."
                 )
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
         if name == "verify":
-            await message.reply_text(f"ʜᴇʏ {message.from_user.first_name},\nᴛʜᴀɴᴋs ғᴏʀ ᴠᴇʀɪғʏɪɴɢ ʏᴏᴜʀsᴇʟғ ɪɴ {config.MUSIC_BOT_NAME}, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴜsɪɴɢ ᴍᴇ.")
+            await message.reply_text(f"𝐻𝑒𝑦 {message.from_user.first_name},\n𝑇𝒉𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝑉𝑒𝑟𝑖𝑓𝑖𝑛𝑔 𝑌𝑜𝑢𝑟𝑠𝑒𝑙𝑓 {config.MUSIC_BOT_NAME}, 𝐼𝑛 𝐵𝑎𝑐𝑘 𝐴𝑛𝑑 𝑆𝑡𝑎𝑟𝑡 𝑈𝑠𝑖𝑛𝑔 𝑀𝑒.")
             if await is_on_off(config.LOG):
                 sender_id = message.from_user.id
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ <code>ᴠᴇʀɪғʏ ʜɪᴍsᴇʟғ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
+                    f"{message.from_user.mention} 𝐽𝑢𝑠𝑡 𝑆𝑡𝑎𝑟𝑡𝑒𝑑 𝑇𝒉𝑒 𝐵𝑜𝑡 𝑇𝑜 <code>𝑉𝑒𝑟𝑖𝑓𝑦 𝐻𝑖𝑚𝑠𝑒𝑙𝑓</code>\n\n**𝑈𝑠𝑒𝑟 𝑖𝑑:** {sender_id}\n**𝑈𝑠𝑒𝑟𝑛𝑎𝑚𝑒:** {sender_name}",
                 )
             return
         if name[0:3] == "inf":
@@ -154,26 +154,26 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-😲**ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ**😲
+**𝑇𝑟𝑎𝑐𝑘 𝐼𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛**
 
-📌 **ᴛɪᴛʟᴇ:** {title}
+📌 **𝑇𝑖𝑡𝑙𝑒:** {title}
 
-⏳ **ᴅᴜʀᴀᴛɪᴏɴ:** {duration} ᴍɪɴᴜᴛᴇs
-👀 **ᴠɪᴇᴡs:** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
-🎥 **ᴄʜᴀɴɴᴇʟ:** {channel}
-📎 **ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
-🔗 **ʟɪɴᴋ:** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
+⏳ **𝐷𝑢𝑟𝑎𝑡𝑖𝑜𝑛:** {duration} 𝑀𝑖𝑛𝑢𝑡𝑒𝑠
+👀 **𝑉𝑖𝑒𝑤𝑠:** `{views}`
+⏰ **𝑃𝑢𝑏𝑙𝑖𝑠𝒉𝑒𝑑 𝑂𝑛:** {published}
+🎥 **𝐶𝒉𝑎𝑛𝑛𝑒𝑙:** {channel}
+📎 **𝐶𝒉𝑎𝑛𝑛𝑒𝑙 𝐿𝑖𝑛𝑘:** [𝑉𝑖𝑠𝑖𝑡 𝐶𝒉𝑎𝑛𝑛𝑒𝑙]({channellink})
+🔗 **𝐿𝑖𝑛𝑘:** [𝑊𝑎𝑡𝑐𝒉 𝑂𝑛 𝑌𝑜𝑢𝑡𝑢𝑏𝑒]({link})
 
-💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {config.MUSIC_BOT_NAME}"""
+💖 𝑆𝑒𝑎𝑟𝑐𝒉 𝑃𝑜𝑤𝑒𝑟𝑒𝑑 𝐵𝑦 {config.MUSIC_BOT_NAME}"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
+                            text="𝑌𝑜𝑢𝑡𝑢𝑏𝑒", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/DevilsHeavenMF"
+                            text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", url="https://t.me/full_on_bakchodii"
                         ),
                     ],
                 ]
