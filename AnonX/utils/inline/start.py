@@ -44,7 +44,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="𝑺𝒖𝒑𝒑𝒐𝒓𝒕 🚑", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="𝑼𝒑𝒅𝒂𝒕𝒆𝒔 ❓, url="https://t.me/Makima_Updatess",
+                text="𝑼𝒑𝒅𝒂𝒕𝒆𝒔 ❓, user_id=OWNER
             )
         ],
         [
