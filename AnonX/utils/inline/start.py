@@ -46,11 +46,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                 text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ❓", url=config.SUPPORT_CHANNEL
             )
-        ],
-        [
-            InlineKeyboardButton(
-                text="𝑀𝑎𝑛𝑎𝑔𝑒𝑚𝑒𝑛𝑡 ", url=config.
-            )
-        ],
+        ].
      ]
     return buttons
