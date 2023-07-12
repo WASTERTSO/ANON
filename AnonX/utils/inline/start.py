@@ -9,17 +9,17 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="𝐴𝑑𝑑 𝑀𝑒 𝐵𝑎𝑏𝑦 ➕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ",
+                text="𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠 🚨",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text="𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠 ⚙", callback_data="settings_helper"
             ),
         ],
      ]
@@ -30,26 +30,26 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="𝐴𝑑𝑑 𝑀𝑒 𝐵𝑎𝑏𝑦 ➕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ", callback_data="settings_back_helper"
+                text="𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠 🚨", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="❣ sᴜᴩᴩᴏʀᴛ ❣", url=config.SUPPORT_GROUP
+                text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER
+                text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ❓", user=config.SUPPORT_CHANNEL
             )
         ],
         [
             InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=config.UPSTREAM_REPO
+                text="𝑀𝑎𝑛𝑎𝑔𝑒𝑚𝑒𝑛𝑡 🤖", url=f"https://t.me/makima_superXbot"
             )
         ],
      ]
