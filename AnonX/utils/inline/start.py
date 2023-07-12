@@ -42,11 +42,11 @@ def private_panel(_, BOT_USERNAME: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", 
-                url=f"https://t.me/"
+                url=f"https://t.me/full_on_bakchodii"
             ),
             InlineKeyboardButton(
                 text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ❓", 
-                url=f"https://t.me/"
+                url=f"https://t.me/MAKIMA_UPDATESS"
             )
         ],
         [
