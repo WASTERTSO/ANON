@@ -26,7 +26,7 @@ def start_pannel(_, BOT_USERNAME: Union[bool, int] = None):
     return buttons
 
 
-def private_panel(_, BOT_USERNAME, SUPPORT_CHANNEL, SUPPORT_GROUP: Union[bool, int] = None):
+def private_panel(_, BOT_USERNAME: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
@@ -41,15 +41,18 @@ def private_panel(_, BOT_USERNAME, SUPPORT_CHANNEL, SUPPORT_GROUP: Union[bool, i
         ],
         [
             InlineKeyboardButton(
-                text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", url=config.SUPPORT_GROUP
+                text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", 
+                url=f"https://t.me/"
             ),
             InlineKeyboardButton(
-                text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ❓", user=config.SUPPORT_CHANNEL
+                text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ❓", 
+                url=f"https://t.me/"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝑀𝑎𝑛𝑎𝑔𝑒𝑚𝑒𝑛𝑡 🤖", url=f"https://t.me/makima_superXbot"
+                text="𝑀𝑎𝑛𝑎𝑔𝑒𝑚𝑒𝑛𝑡 🤖", 
+                url=f"https://t.me/makima_superXbot"
             )
         ],
      ]
