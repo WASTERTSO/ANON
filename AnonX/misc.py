@@ -20,19 +20,19 @@ def is_heroku():
 
 
 XCB = [
-    "/",
-    "@",
-    ".",
+    "!",
+    "*",
+    "+",
     "com",
-    ":",
-    "git",
+    "-",
+    "github",
     "heroku",
     "push",
     str(config.HEROKU_API_KEY),
-    "https",
+    "http",
     str(config.HEROKU_APP_NAME),
-    "HEAD",
-    "main",
+    "HEADD",
+    "mainn",
 ]
 
 
