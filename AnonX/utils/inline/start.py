@@ -50,11 +50,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ],
         [
-            InlineKeyboardButton(
-                text="𝑀𝑎𝑛𝑎𝑔𝑒𝑚𝑒𝑛𝑡 🤖", 
-                url=f"https://t.me/makima_superXbot"
-            )
-        ],
-     ]
+            
     return buttons
 
