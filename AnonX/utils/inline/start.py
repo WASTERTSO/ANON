@@ -50,6 +50,11 @@ def private_panel(_, BOT_USERNAME, Union[bool, int] = None):
                 url=f"https://t.me/MAKIMA_UPDATESS"
             )
         ],
-        [
+        [   
+            InlineKeyboardButton(
+                 text="ᴏᴡɴᴇʀ", url=f"https://t.me/sleeping_always"
+            )
+        ],
+     ]
             
     return buttons
