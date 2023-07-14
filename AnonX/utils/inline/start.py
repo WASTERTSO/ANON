@@ -27,7 +27,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     return buttons
 
 
-def private_panel(_, BOT_USERNAME, Union[bool, int] = None):
+def private_panel(_, BOT_USERNAME, SUPPORT_GROUP Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
