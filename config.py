@@ -76,7 +76,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/cf6517737eb79ce25a93d.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/72d9af9cd0d4d49658e69.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
@@ -97,7 +97,7 @@ STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 
-YOUTUBE_IMG_URL = "https://graph.org/file/dc0f6fd8bdb5d8322ad5b.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/193c08aeafbd1bee9e96b.jpg"
 
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 
