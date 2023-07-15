@@ -9,23 +9,23 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeybᴏardButton(
-                text="𝐀ԃ𝐃 𝐌ҽ 𝐌σ𝐈 𝐋ꪮꪜ𝐄",
+                text="𝐴𝑑𝑑 𝑀𝑒 𝑇𝑜 𝑌𝑜𝑢𝑟 𝐺𝑟𝑜𝑢𝑝",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="❤𝐎ɯɳҽ𝐑❤",
-                url=f"https://t.me/fuck_that_and_fuck_you",
+                text="𝑀𝑎𝑖𝑛𝑡𝑎𝑖𝑛𝑒𝑟",
+                url=f"https://t.me/sleeping_alwasy",
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝐇ҽʅ𝐏",
+                text="𝐻𝑒𝑙𝑝",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="𝐒ҽƚƚιɳɠ𝐒", callback_data="settings_helper"
+                text="𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠", callback_data="settings_helper"
             ),
         ],
      ]
@@ -36,18 +36,18 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="•𝐀ԃ𝐃 𝐌ҽ 𝐓σ 𝐘συ𝐑 𝐆ɾσυ𝐏•",
+                text="𝐴𝑑𝑑 𝑀𝑒 𝑇𝑜 𝑌𝑜𝑢𝑟 𝐺𝑟𝑜𝑢𝑝",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝐂σɱɱαɳԃ𝐒", callback_data="settings_back_helper"
+                text="𝐻𝑒𝑙𝑝 𝐴𝑏𝑑 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝐂нαииєℓ", url=f"https://t.me/no_more_visible"
+                text="𝑀𝑎𝑖𝑛𝑡𝑎𝑖𝑛𝑒𝑟", url=f"https://t.me/sleeping_alwasy"
             )
             ],
      ]
