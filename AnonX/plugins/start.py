@@ -88,7 +88,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚](https://t.me/full_on_bakchodii) ** 𝑃𝑙𝑎𝑦𝑒𝑑 {count} 𝑇𝑖𝑚𝑒𝑠**\n\n"
+                        msg += f"🔗[𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚](https://t.me/strangers_hell) ** 𝑃𝑙𝑎𝑦𝑒𝑑 {count} 𝑇𝑖𝑚𝑒𝑠**\n\n"
                     else:
                         msg += f"🔗 [{𝑇𝑖𝑡𝑙𝑒}](https://www.youtube.com/watch?v={vidid}) ** 𝑃𝑙𝑎𝑦𝑒𝑑 {count} 𝑇𝑖𝑚𝑒𝑠**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -173,7 +173,7 @@ async def start_comm(client, message: Message, _):
                             text="𝑌𝑜𝑢𝑡𝑢𝑏𝑒", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", url="https://t.me/full_on_bakchodii"
+                            text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡 🚑", url="https://t.me/strangers_hell"
                         ),
                     ],
                 ]
@@ -202,7 +202,7 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_sticker("CAACAgUAAxkBAAIjTGKPYCq3keRZgNbshxtJ5k7H609OAAIZBgACYAF5VIerYoMcSln8JAQ")
+                await message.reply_sticker("CAACAgIAAxkDAAIEtmSzvBqE5cxPp6t95DAo1ZUHp7TqAAIoIAACJaYJS-FqCk576-FVLwQ")
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
