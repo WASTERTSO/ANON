@@ -1,4 +1,4 @@
-import re
+vimport re
 import sys
 from os import getenv
 
@@ -25,8 +25,8 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/WASTERTSO/ANON")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Makima_updatess")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/strangers_hell")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/godx_bots")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/tso_chats")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,7 +76,7 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/72d9af9cd0d4d49658e69.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/22161e10b767021b6e50b.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
@@ -97,7 +97,7 @@ STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 
-YOUTUBE_IMG_URL = "https://graph.org/file/193c08aeafbd1bee9e96b.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/2b2ff1290891e825c9df1.jpg"
 
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 
