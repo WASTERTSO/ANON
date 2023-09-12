@@ -1,4 +1,3 @@
-vimport re
 import sys
 from os import getenv
 
